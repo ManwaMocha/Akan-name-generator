@@ -40,6 +40,8 @@ In Akan culture, children are named according to the day of the week they are bo
 
 5. Open index.html in vs code
 
+---
+
 ## BDD (Behavior-Driven Development)
 
 | Behavior                                          | Input Example                                 | Expected Output                                                     |
@@ -51,3 +53,35 @@ In Akan culture, children are named according to the day of the week they are bo
 | User selects female gender                        | Gender: Female                                | The application chooses the name from the female Akan names list    |
 | Application calculates day index                  | Valid date entered                            | Uses the calculated number to match the correct day and Akan name   |
 | Result is displayed on the page                   | Valid inputs submitted                        | The result appears in the result section without reloading the page |
+
+## Technologies Used
+
+- **HTML**  
+  Used to structure the webpage, including the form inputs and result display.
+
+- **CSS**  
+  Used to style the layout, improve readability, and create a clean user interface.
+
+- **JavaScript**  
+  Used to handle user input, perform calculations, apply the Akan naming logic, and update the page dynamically.
+
+- **Git**  
+  Used for version control to track changes throughout development.
+
+- **GitHub**  
+  Used to host the project repository and manage commits.
+
+  ## 📞 Contact Information
+
+- **Name:** Augustus Mocha
+- **Email:** your-email@example.com
+- **GitHub:** https://github.com/ManwaMocha
+- **Gh-pages
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+## © Copyright
+
+© 2026 Augustus Mocha
