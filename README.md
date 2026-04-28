@@ -40,4 +40,14 @@ In Akan culture, children are named according to the day of the week they are bo
 
 5. Open index.html in vs code
 
+## BDD (Behavior-Driven Development)
 
+| Behavior                                          | Input Example                                 | Expected Output                                                     |
+| ------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------- |
+| User enters a valid birth date and selects male   | Day: 15, Month: 8, Year: 2003, Gender: Male   | Displays the day of the week and the male Akan name                 |
+| User enters a valid birth date and selects female | Day: 15, Month: 8, Year: 2003, Gender: Female | Displays the day of the week and the female Akan name               |
+| User submits different birth dates                | Day: 10, Month: 5, Year: 2001                 | Displays a different day of the week and matching Akan name         |
+| User selects male gender                          | Gender: Male                                  | The application chooses the name from the male Akan names list      |
+| User selects female gender                        | Gender: Female                                | The application chooses the name from the female Akan names list    |
+| Application calculates day index                  | Valid date entered                            | Uses the calculated number to match the correct day and Akan name   |
+| Result is displayed on the page                   | Valid inputs submitted                        | The result appears in the result section without reloading the page |
