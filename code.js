@@ -32,6 +32,36 @@ form.addEventListener("submit", function (event) {
   let year = Number(document.getElementById("year").value);
   let gender = document.getElementById("gender").value;
 
+  //form validation
+  //empty check
+  if (!day || !month || !year || !gender) {
+    result.textContent = "Please fill all form fields";
+    return;
+  }
+
+  //day and month range
+  if (day < 1 || day > 31) {
+    result.textContent = "fill valid day";
+    return;
+  }
+
+  if (month < 1 || month > 12) {
+    result.textContent = "invalid month";
+  }
+
+  // Leap year check
+  let isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+
+  // February
+  if (month === 2 && day > 29) {
+    result.textContent = "February cannot exceed 29 days.";
+    return;
+  }
+
+  if (month === 2 && day === 29 && !isLeapYear) {
+    result.textContent = "Not a leap year. February has 28 days.";
+    return;
+  }
   //use the data and place them in relevant variables for the formula
   let CC = Math.floor(year / 100);
   let YY = year % 100;
