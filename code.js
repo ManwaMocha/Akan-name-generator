@@ -23,3 +23,8 @@ const maleNames = [
 ];
 
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+let CC = Math.floor(year / 100);
+let YY = year % 100;
+let MM = month;
+let DD = day;
