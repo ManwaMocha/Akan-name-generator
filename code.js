@@ -24,26 +24,35 @@ const maleNames = [
 
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-//use the data and place them in relevant variables for the formula
-let CC = Math.floor(year / 100);
-let YY = year % 100;
-let MM = month;
-let DD = day;
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  //get the data from form
+  let day = Number(document.getElementById("day").value);
+  let month = Number(document.getElementById("month").value);
+  let year = Number(document.getElementById("year").value);
+  let gender = document.getElementById("gender").value;
 
-//use the extracted data in the formula
-let d = (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
+  //use the data and place them in relevant variables for the formula
+  let CC = Math.floor(year / 100);
+  let YY = year % 100;
+  let MM = month;
+  let DD = day;
 
-d = Math.floor(d);
-if (d < 0) {
-  d += 7;
-}
+  //use the extracted data in the formula
+  let d = (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
 
-let akanName;
+  d = Math.floor(d);
+  if (d < 0) {
+    d += 7;
+  }
 
-if (gender === "male") {
-  akanName = malenames[d];
-} else {
-  akanName = femaleNames[d];
-}
+  let akanName;
 
-result.textContent = "you were born on ${days[d]}. Your Akan name is ${akanName}.";
+  if (gender === "male") {
+    akanName = maleNames[d];
+  } else {
+    akanName = femaleNames[d];
+  }
+
+  result.textContent = `${days[d]} ${akanName}.`;
+});
