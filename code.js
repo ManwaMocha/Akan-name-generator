@@ -37,3 +37,13 @@ d = Math.floor(d);
 if (d < 0) {
   d += 7;
 }
+
+let akanName;
+
+if (gender === "male") {
+  akanName = malenames[d];
+} else {
+  akanName = femaleNames[d];
+}
+
+result.textContent = "you were born on ${days[d]}. Your Akan name is ${akanName}.";
