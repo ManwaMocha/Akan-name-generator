@@ -55,4 +55,5 @@ form.addEventListener("submit", function (event) {
   }
 
   result.textContent = `${days[d]} ${akanName}.`;
+  form.reset();
 });

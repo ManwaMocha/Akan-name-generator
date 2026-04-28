@@ -20,7 +20,7 @@ section {
   background-color: #6fcf97;
   border-radius: 5%;
   justify-content: center;
-  max-width: 500px;
+  max-width: 65%;
   margin: 20px auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
@@ -47,4 +47,8 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+}
+footer {
+  background-color: green;
+  padding: 8px;
 }

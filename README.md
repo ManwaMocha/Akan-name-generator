@@ -39,3 +39,5 @@ In Akan culture, children are named according to the day of the week they are bo
    ```
 
 5. Open index.html in vs code
+
+
