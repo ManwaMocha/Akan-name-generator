@@ -76,7 +76,10 @@ In Akan culture, children are named according to the day of the week they are bo
 - **Name:** Augustus Mocha
 - **Email:** your-email@example.com
 - **GitHub:** https://github.com/ManwaMocha
-- **Gh-pages
+
+## link to live site on github
+
+https://manwamocha.github.io/Akan-name-generator/
 
 ## 📜 License
 
