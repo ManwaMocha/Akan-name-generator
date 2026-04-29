@@ -10,6 +10,10 @@ header {
   padding: 6px;
   justify-content: center;
   display: flex;
+  letter-spacing: 2px;
+}
+header h1 {
+  padding: auto 8px;
 }
 
 img {
@@ -17,19 +21,16 @@ img {
   height: 50px;
 }
 section {
-  background-color: #6fcf97;
-  border-radius: 5%;
+  background-color: green;
+  border-radius: 10px;
   justify-content: center;
   max-width: 65%;
   margin: 20px auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
+  font-weight: bolder;
 }
 main :hover {
-  background-color: green;
-}
-
-section form:hover {
   background-color: lightgreen;
 }
 
@@ -40,6 +41,7 @@ form {
 input,
 select {
   padding: 8px;
+  height: 32px;
 }
 button {
   padding: 10px;
@@ -48,7 +50,13 @@ button {
   border: none;
   cursor: pointer;
 }
+button:hover {
+  background-color: gold;
+  color: black;
+}
 footer {
-  background-color: green;
+  background-color: red;
   padding: 8px;
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
